@@ -117,12 +117,13 @@ class App extends Component {
       <Fragment>
         <div className="App">
           <header className="App-header">
-            <h1 className="App-title">Guess 27</h1>
-            <p>27 numbers will be displayed in front of you</p>
-            <p>Pick one of the number in your mind</p>
-            <p>Then select the column</p>
-            <p>Repeat thrice</p>
-            <button type="button" onClick={this.openModal}>Begin</button>
+            <img src="https://scontent.fdgt1-1.fna.fbcdn.net/v/t1.18169-9/14463294_422201171237416_4672170457109378300_n.png?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeH_qKJRJf0tbHGC61SGsTvxvWFgRLy02929YWBEvLTb3R1Z3yFVdrFUIvYm6odhW9A9TtZ8dQfkQ9IpM-yhH2qv&_nc_ohc=nV4E4v_zj-IAX_m6sHC&_nc_ht=scontent.fdgt1-1.fna&oh=00_AfBo1fhSME-Yp1BmOmQvwC_jVu4KgyWtt_sRpFYdDZUiyQ&oe=63C4AACB" alt="Asian College Logo"></img>
+            <h1 className="App-title"><span className="lower">Welcome to  </span><br/>Mind Reader Game</h1>
+            <p><b>How to Play:</b></p>
+            <p> →   There's a total of 27 numbers given.</p>
+            <p> →   Choose one of the numbers given using your mind ONLY. </p>
+            <p> →   Then select the column of your chosen number and repeat it three times.</p>
+            <button type="button" onClick={this.openModal}>Start Game</button>
           </header>
         </div>
         {this.state.shouldDisplayModal && <Modal
